@@ -10,7 +10,7 @@
 
 ### 1. Structures
 
-'''
+```
 
 t_philosopher{
 
@@ -29,6 +29,6 @@ unsigned int  nb_meals;
 
 }
 
-'''
+```
 
 
