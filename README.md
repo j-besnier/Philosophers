@@ -10,7 +10,8 @@
 
 ### 1. Structures
 
-''' t_philosopher{
+'''
+t_philosopher{
 
 
 
