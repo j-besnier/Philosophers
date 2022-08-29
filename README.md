@@ -2,4 +2,4 @@
 
 ## Pistes de résolutions
 
-###1. Structures
+### 1. Structures
