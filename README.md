@@ -11,6 +11,7 @@
 ### 1. Structures
 
 '''
+
 t_philosopher{
 
 
@@ -27,6 +28,7 @@ unsigned int  time_to_sleep;
 unsigned int  nb_meals;
 
 }
+
 '''
 
 
