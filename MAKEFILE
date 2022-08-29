@@ -10,10 +10,11 @@ HEADERS = includes \
 
 SRCS =  main.c \
 		ft_atoui.c \
+		init_data.c \
 		
 CC = gcc
 
-CFLAGS = -MMD -Wall -Wextra
+CFLAGS = -MMD -Wall -Wextra -Werror
 
 RM = rm -rf
 
@@ -36,7 +37,7 @@ $(OBJ_PATH)/%.o:		%.c
 $(OBJS):	| $(OBJ_PATH)
 
 $(OBJ_PATH):
-			mkdir $(OBJ_PATH)
+			mkdir -p $(OBJ_PATH)
 
 clean:
 		${RM} $(OBJ_PATH)
