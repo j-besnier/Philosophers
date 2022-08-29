@@ -8,6 +8,12 @@
 
 # define ERR_ARGNB "Invalid number of arguments"
 
+# define FORK "has taken a fork"
+# define EATING "is eating"
+# define SLEEPING "is sleeping"
+# define THINKING "is thinking"
+# define DIED "died"
+
 typedef struct s_philosopher {
     unsigned int  position;
     unsigned int  left_fork;
