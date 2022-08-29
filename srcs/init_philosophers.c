@@ -16,9 +16,10 @@ int init_philosophers(t_data *data)
     }
     while (++i < data->nb_philos)
     {
-        data->philos->position = i;
-        data->philos->left_fork = i;
-        data->philos->right_fork = (i + 1) % data->nb_philos;
-        data->philos->last_meal = 0;
+        data->philos[i].position = i;
+        data->philos[i].left_fork = i;
+        data->philos[i].right_fork = (i + 1) % data->nb_philos;
+        data->philos[i].last_meal = 0;
     }
+    return (0);
 }
