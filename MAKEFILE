@@ -4,13 +4,16 @@ FSANITIZE = -g3 -fsanitize=address
 
 SRCSPATH = srcs
 
+OBJ_PATH = obj
+
 HEADERS = includes \
 
-SRCS =  
+SRCS =  main.c \
+		ft_atoui.c \
 		
 CC = gcc
 
-CFLAGS = -MMD -Wall -Werror -Wextra $(FSANITIZE)
+CFLAGS = -MMD -Wall -Wextra
 
 RM = rm -rf
 
@@ -33,7 +36,7 @@ $(OBJ_PATH)/%.o:		%.c
 $(OBJS):	| $(OBJ_PATH)
 
 $(OBJ_PATH):
-			mkdir -p $(OBJ_PATH)
+			mkdir $(OBJ_PATH)
 
 clean:
 		${RM} $(OBJ_PATH)

@@ -4,6 +4,9 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <pthread.h>
+# include <limits.h>
+
+# define ERR_ARGNB "Invalid number of arguments"
 
 typedef struct s_philosopher {
     unsigned int  position;
@@ -25,7 +28,7 @@ typedef struct s_data {
 } t_data;
 
 
-
+int ft_atoui(char *str, unsigned int *n);
 
 
 
