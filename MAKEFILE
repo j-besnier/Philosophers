@@ -10,11 +10,19 @@ HEADERS = includes \
 
 SRCS =  main.c \
 		ft_atoui.c \
+		ft_error.c \
 		init_data.c \
+		init_philosophers.c \
+		init_mutex.c \
+		init_mutexes.c \
+		free_philos.c \
+		free_data.c \
+		get_time.c \
+
 		
 CC = gcc
 
-CFLAGS = -MMD -Wall -Wextra -Werror
+CFLAGS = -MMD -Wall -Wextra -Werror $(FSANITIZE)
 
 RM = rm -rf
 

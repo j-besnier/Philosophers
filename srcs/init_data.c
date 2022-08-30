@@ -19,5 +19,8 @@ int init_data(t_data *data, int argc, char **argv)
     }
     else
         data->nb_meals = -1;
+    data->forks_mutexes = NULL;
+    data->write_mutex = NULL;
+    data->dead_mutex = NULL;
     return (0);
 }
